@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Portal</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="/main.js"></script>
+</head>
+<header>
+    <div class="logo"><img src="/pulkit_logo.png" alt="logo"></div>
+</header>
+
+<body>
+    <div class="container" id="coni">
+        <h2>Select a Program : </h2>
+        <div class="row">
+            <div class="cols">
+                <div class="badge">Most in Demand</div>
+                <h3>Global Certificate in Data Science & AI (GCDAI)</h3>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 1</p>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 2</p>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 3</p>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 4</p>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 5</p>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 6</p>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 7</p>
+                <div class="selecting">
+                    <h4>Select</h4>
+                    <input class="select-course" id="select-course-1" type="checkbox"></input>
+                </div>
+            </div>
+            <div class="col-apply">
+                <h4>Program Selected : </h4><br>
+                <b id="ProgramName"></b>
+                <p>Reserve your seat : 3000 INR</p>
+                <div class="form-div">
+                    <form>
+                        <br>
+                        <input type="text" name="fisrtname" placeholder="Enter First Name Here">
+                        <br>
+                        <br>
+                        <input type="text" name="lastname" placeholder="Enter Last Name Here">
+                        <br>
+                        <br>
+                        <input type="text" name="email_id" placeholder="Enter Email Id Here">
+                        <br><br>
+                        <select id="select-cor" onclick="myForm()" class="select-c" name="batch"
+                            placeholder="Enter Email Id Here">
+                            <option value="disabled">Select Batch</option>
+                            <option id="optiond" value="1">
+                                <p>8 May 2021</p>
+                            </option>
+                        </select>
+                        <br><br>
+                        <script src="https://checkout.razorpay.com/v1/checkout.js" data-key="rzp_test_mZNzawpicVOX3V"
+                            data-amount="100" data-currency="INR" data-order_id=""
+                            data-buttontext="Reserve My Seat with Scholarship" data-name="INSAID" data-description=""
+                            data-image="https://apply.insaid.co/#" data-prefill.name="" data-prefill.email=""
+                            data-theme.color="#22a9e1"></script>
+                        <input class="razor-payment-button" type="hidden" custom="Hidden Element" name="hidden">
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="cols">
+                <div class="badge1">Most Popular</div>
+                <h3>Global Certificate in Data Science</h3>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 1</p>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 2</p>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 3</p>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 4</p>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 5</p>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 6</p>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 7</p>
+                <div class="selecting">
+                    <h4>Select</h4>
+                    <input class="select-course" id="select-course-2" type="checkbox"></input>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="test">
+                    <div class="imgd"><img src="/pulkit_logo.png" alt="photo"></div>
+                    <div class="testdiv">
+                        <p class="testp">“In class interaction with Faculty is simply Amazing”</p><br>
+                        <b class="testn">Kali Pandey,Wipro</b><br><br>
+                        <b class="testd">GCD, August'18</b><br>
+                    </div>
+                </div>
+                <div class="test">
+                    <div class="imgd"><img src="/pulkit_logo.png" alt="photo"></div>
+                    <div class="testdiv">
+                        <p class="testp">“In class interaction with Faculty is simply Amazing”</p><br>
+                        <b class="testn">Kali Pandey,Wipro</b><br><br>
+                        <b class="testd">GCD, August'18</b><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="cols">
+                <h3>Certificate in Data Science Foundation</h3>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 1</p>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 2</p>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 3</p>
+                <p class="desc">Term 3: EDA & Data Storytelling + Minor Project 4</p>
+                <div class="selecting">
+                    <h4>Select</h4>
+                    <input class="select-course" id="select-course-3" type="checkbox"></input>
+                </div>
+            </div>
+            <div class="tools">
+                <h2>Tools Covered in course</h2>
+                <div class="images">
+                    <img src="/pulkit_logo.png" alt="p">
+                    <img src="/pulkit_logo.png" alt="p">
+                    <img src="/pulkit_logo.png" alt="p">
+                </div>
+                <p>100% program satisfaction guarenteed!</p>
+                <p>Start your Data Science Journey Today</p>
+            </div>
+        </div>
+
+        <div class="row2">
+
+            <h3 style="text-align: center;">What Happens Next?</h3>
+            <div class="timeline">
+                <div class="events">
+                    <ol>
+                        <ul>
+                            <li>
+                                <a href="#0" class="selected">1</a>
+                            </li>
+                            <li>
+                                <a href="#1">2</a>
+                            </li>
+                            <li>
+                                <a href="#2">3</a>
+                            </li>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+            <div class="timeline-below">
+                <div class="events-below">
+                    <ol>
+                        <ul>
+                            <li>
+                                <p>Pay complete program fee or
+                                    Reserve your seat</p>
+                            </li>
+                            <li>
+                                <p>Complete scholarship application
+                                    & pay remaining fee before deadline</p>
+                            </li>
+                            <li>
+                                <p>Start your pre program prep with
+                                    Python & Statistics Starter Kit</p>
+                            </li>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="cols1">
+                <h3 style="text-align: center;">What Happens Next?</h3>
+                <div class="listing">
+                    <ul>
+                        <li>
+                            Pay complete program fee or
+                            Reserve
+                        </li><br>
+                        <li>
+                            Pay complete program fee or
+                            Reserve your seat
+                        </li><br>
+                        <li>
+                            Pay complete program fee or
+                            Reserve your seat
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cols1">
+                <h3 style="text-align: center;">What Happens Next?</h3>
+                <div class="listing">
+                    <ul>
+                        <li>Pay complete program fee or
+                            Reserve your seat
+                        </li><br>
+                        <li>
+                            Pay complete program fee or
+                            Reserve your seat
+                        </li><br>
+                        <li>
+                            Pay complete program fee or
+                            Reserve your seat
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p> admissions@insaid.co | +91 9625811095</p>
+        <p>© 2021 INSAID. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+
+
+
+</html>
